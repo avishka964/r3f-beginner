@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 import { OrbitControls } from '@react-three/drei';
-import TorusKnot from './TorusKnot';
+import Sphere from './Sphere';
 
 const Scene = () => {
 
@@ -8,7 +8,7 @@ const Scene = () => {
         <>
             <directionalLight position={[0, 0, 2]} />
 
-            <TorusKnot positions={[0, 0, 0]} color="red" size={[1, 0.1, 1000, 50]} />
+            <Sphere positions={[0, 0, 0]} color="red" size={[1, 30, 30]} />
             <OrbitControls enableZoom={false} />
         </>
     );

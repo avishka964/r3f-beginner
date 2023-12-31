@@ -23,7 +23,7 @@ const Sphere = (props) => {
       scale={isClicked ? 1.5 : 1}
     >
       <sphereGeometry args={props.size} />
-      <meshStandardMaterial color={isHovered ? 'green' : props.color} wireframe />
+      <meshStandardMaterial color={isHovered ? 'green' : props.color}  />
     </mesh>
   );
 };
