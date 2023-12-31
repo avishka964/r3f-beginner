@@ -1,8 +1,11 @@
-# React + Vite
+# React Three Fiber Beginner Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Declarative Syntax: Developers can use JSX, the syntax extension for JavaScript often associated with React, to define and structure 3D scenes.
 
-Currently, two official plugins are available:
+2. Component-Based: R3F follows the component-based architecture of React, allowing developers to create reusable and composable 3D components.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Integration with Three.js: React Three Fiber is built on top of Three.js, providing a React-friendly layer over the powerful capabilities of Three.js. It simplifies the creation and manipulation of 3D objects, cameras, lights, and other elements.
+
+4. Hooks API: R3F introduces a set of hooks that allow developers to interact with the underlying Three.js instances, enabling dynamic updates and animations.
+
+Documentation: [GETTING STARTED](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
