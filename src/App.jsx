@@ -1,10 +1,14 @@
+import { Canvas } from '@react-three/fiber';
 import './App.css';
 
 const App = () => {
   return (
-    <>
-      <h1>Hello</h1>
-    </>
+    <Canvas>
+      <mesh>
+        <boxGeometry />
+        <meshStandardMaterial color={'orange'} />
+      </mesh>
+    </Canvas>
   );
 };
 
