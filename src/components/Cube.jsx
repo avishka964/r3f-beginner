@@ -23,8 +23,8 @@ const Cube = (props) => {
 Cube.propTypes = {
   positions: PropTypes.array,
   size: PropTypes.array,
-  scale: PropTypes.scale,
-  color: PropTypes.string,
+  scale: PropTypes.array,
+  color: PropTypes.number,
 };
 
 export default Cube;
