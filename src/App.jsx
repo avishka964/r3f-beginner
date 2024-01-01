@@ -9,6 +9,7 @@ import Floor from './components/Floor';
 
 
 const App = () => {
+
   return (
     <>
       <VRButton
@@ -34,12 +35,12 @@ const App = () => {
       >
         VR
       </VRButton>
-      <Canvas>
+      <Canvas camera={{position: [4, 7, 0]}}>
         <XR>
           <Sky sunPosition={[0, 1, 0]}/>
           <Floor />
-          <ambientLight />
-          <pointLight position={[10, 10, 10]} />
+          {/* <ambientLight />
+          <pointLight position={[10, 10, 10]} /> */}
           <Controllers />
           <Hands />
           <Scene />

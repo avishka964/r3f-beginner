@@ -14,9 +14,13 @@ const Scene = () => {
         setColor((Math.random() * 0xffffff) | 0);
     };
 
+
+
     return (
         <>
             {/* <directionalLight position={[0, 0, 2]} /> */}
+            <ambientLight />
+            <pointLight position={[10, 10, 10]} />
             <Interactive onSelect={onSelect} onHover={() => setHover(true)} onBlur={() => setHover(false)}>
 
                 <Cube positions={[0, 0.9, -1]} scale={hover ? [2, 2, 2] : [1, 1, 1]} color={color} size={[1, 1, 1]} />
