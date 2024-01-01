@@ -6,6 +6,7 @@ import Scene from './components/Scene';
 import { VRButton, XR, Controllers, Hands } from '@react-three/xr';
 import { OrbitControls, Sky, Text } from '@react-three/drei';
 import Floor from './components/Floor';
+import Background from './components/Background';
 
 
 const App = () => {
@@ -35,10 +36,11 @@ const App = () => {
       >
         VR
       </VRButton>
-      <Canvas camera={{position: [4, 7, 0]}}>
+      <Canvas>
         <XR>
-          <Sky sunPosition={[0, 1, 0]}/>
-          <Floor />
+          {/* <Sky sunPosition={[0, 1, 0]}/>
+          <Floor /> */}
+          <Background />
           {/* <ambientLight />
           <pointLight position={[10, 10, 10]} /> */}
           <Controllers />

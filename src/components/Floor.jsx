@@ -15,17 +15,17 @@ const Floor = () => {
   });
 
   return (
-    <mesh rotation={[-Math.PI / 2, 0, 0]}>
-      <planeGeometry args={[40, 40]} />
-      <meshStandardMaterial color="#666" />
-    </mesh>
-    // <Plane args={[10, 10, 128, 128]} rotation={[-Math.PI / 2, 0, 0]}>
-    //   <meshStandardMaterial 
-    //       {...terrainTextures} 
-    //       // normalMapType={LinearSRGBColorSpace}
-    //       // transparent
-    //   />
-    // </Plane>
+    // <mesh rotation={[-Math.PI / 2, 0, 0]}>
+    //   <planeGeometry args={[40, 40]} />
+    //   <meshStandardMaterial color="#666" />
+    // </mesh>
+    <Plane args={[10, 10, 128, 128]} rotation={[-Math.PI / 2, 0, 0]}>
+      <meshStandardMaterial 
+          {...terrainTextures} 
+          // normalMapType={LinearSRGBColorSpace}
+          // transparent
+      />
+    </Plane>
   );
 };
 
