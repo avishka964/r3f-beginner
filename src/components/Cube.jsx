@@ -9,13 +9,13 @@ const Cube = (props) => {
   useFrame((state, delta) => {
     ref.current.rotation.x += delta
     ref.current.rotation.y += delta * 2.0
-    ref.current.position.z = Math.sin(state.clock.elapsedTime) * 2
+    // ref.current.position.z = Math.sin(state.clock.elapsedTime) * 2
   })
 
   return (
     <mesh position={props.positions} ref={ref}>
-      <boxGeometry args={props.size} />
-      <meshStandardMaterial color={props.color} />
+      <boxGeometry args={props.size} scale={props.scale}/>
+      <meshPhongMaterial color={props.color} />
     </mesh>
   );
 };
@@ -23,6 +23,7 @@ const Cube = (props) => {
 Cube.propTypes = {
   positions: PropTypes.array,
   size: PropTypes.array,
+  scale: PropTypes.scale,
   color: PropTypes.string,
 };
 
